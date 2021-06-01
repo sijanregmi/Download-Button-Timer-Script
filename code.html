@@ -1,0 +1,29 @@
+<html>
+    <title>Download Timer Script Example</title>
+    
+<center>Your link is almost ready, please wait for few seconds...<div style="margin-top:13px;">
+                    <a class="g-btn g-btn-action">
+                        <span id="waiting"></span>
+                    </a>
+                </div>
+                <noscript><span style="color:#3cba57;font-size:26px">Enable Javascript in your browser!</span></noscript>
+<div id="after"></div>
+            
+         
+        <script type="text/javascript">
+    function countdown(sec) {
+        sec--;
+        if( sec > 0 ){
+            document.getElementById("waiting").innerHTML = '<div id=download></div><span style="padding: 5px 30px;font-size: 10px;">'+sec+'</span>';
+            window.setTimeout("countdown("+sec+")", 1400);
+        } else 
+        
+        { 
+            document.getElementById("waiting").innerHTML = "<div id=download></div><a href=https://uploadage.com/file/mN7iZolI><input type=\"button\" value=\"Download\" class=\"btn btn-green\" onclick=\"this.disabled=1;  this.value='Started..'; this.disabled=true;this.className = (this.className == 'btn' ? 'btnss' : 'btn')\"></input></a>";
+        }
+    }
+    countdown(12);
+    </script></center>
+
+</body>
+</html>
